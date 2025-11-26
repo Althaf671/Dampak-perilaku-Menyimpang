@@ -1,0 +1,84 @@
+<section class="infograph__section">
+    <h2>Apa yang harus aku lakukan agar terhindar dari LGBT?</h2>
+    <div class="inner-container">
+        <div class="container" style="grid-area: box-1;">Gambar Pendukung 1</div>
+        <div class="container" style="grid-area: box-2;">Gambar Pendukung 2</div>
+        <div class="container" style="grid-area: box-3;">Gambar Pendukung 3</div>
+        <div class="container" style="grid-area: box-4;">Gambar Pendukung 4</div>
+        <div class="container" style="grid-area: box-5;">Gambar Pendukung 5 etc..</div>
+    </div>
+</section>
+
+<style>
+    .infograph__section {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: fit-content;
+        padding-block: 3em;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 1.85rem;
+        max-width: 90%;
+        text-align: center;
+        padding-inline: 10px;
+    }
+
+    .inner-container {
+        width: 100vw;
+        min-height: fit-content;
+        display: grid;
+        grid-template-columns: 
+            minmax(100px, 13vw) minmax(100px, 13vw) minmax(100px, 13vw) 
+            minmax(100px, 13vw) minmax(100px, 13vw) minmax(100px, 13vw);
+        grid-template-rows: 300px 300px;
+        grid-template-areas: 
+        "box-1 box-1 box-2 box-2 box-3 box-3"
+        "box-4 box-4 box-4 box-5 box-5 box-5";
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .container {
+        width: auto;
+        height: auto;
+        background-color: aquamarine;
+    }
+
+    @media(max-width: 1000px) {
+        .inner-container {
+            width: 100vw;
+            min-height: fit-content;
+            display: grid;
+            grid-template-columns: 14vw 14vw 14vw 14vw 14vw 14vw; 
+            grid-template-rows: 300px 300px 300px;
+            grid-template-areas: 
+            "box-1 box-1 box-1 box-2 box-2 box-2"
+            "box-4 box-4 box-4 box-4 box-3 box-3"
+            "box-5 box-5 box-5 box-5 box-5 box-5";
+            gap: 1em;
+            justify-content: center;
+        }       
+    }
+
+    @media(max-width: 600px) {
+        .inner-container {
+            width: 100vw;
+            min-height: fit-content;
+            display: grid;
+            grid-template-columns: 44vw 44vw;
+            grid-template-rows: 150px 150px 150px 150px;
+            grid-template-areas: 
+            "box-1 box-2"
+            "box-3 box-2"
+            "box-3 box-4"
+            "box-5 box-5";
+            gap: .5em;
+            justify-content: center;
+        }     
+    }
+
+</style>
