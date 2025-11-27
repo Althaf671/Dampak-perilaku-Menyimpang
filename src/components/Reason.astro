@@ -1,10 +1,30 @@
 <section class="reason__section">
-    <h2>Mengapa perilaku LGBT sangat berbahaya?</h2>
+    <h2>Mengapa perilaku LGBT sangat <span class="hl-main">berbahaya?</span></h2>
     <div class="inner-container">
-        <div class="desc">Penjelasan Resiko</div>
-        <div class="card-metric">metric 1 HIV/AIDS</div>
-        <div class="card-metric">metric 2 Penyakit lainnya</div>
+        <div class="desc">
+            <p>
+                Populasi yang melakukan perilaku seksual berisiko tinggi—seperti hubungan anal 
+                tanpa kondom atau berganti-ganti pasangan—memiliki tingkat penularan HIV dan IMS 
+                yang lebih tinggi. Faktor biologis dan pola risiko ini menjelaskan kerentanan yang 
+                tercatat secara statistik, terutama pada populasi MSM.
+            </p>
+        </div>
+        <div class="card-metric">
+            <div class="content">
+                <h2><span class="hl">70x</span> lebih tinggi</h2>
+                <p>Risiko HIV pada kelompok MSM dibanding heteroseksual (CDC, 2023).</p>
+            </div>
+            <img src="https://res.cloudinary.com/dyxqjq1yp/image/upload/v1764262191/bg-1_vuxesw.webp" alt="gambar metric HIV/AIDS">
+        </div>
+        <div class="card-metric">
+            <div class="content">
+                <h2><span class="hl">63%</span></h2>
+                <p>Kasus HIV baru global berasal dari hubungan seksual sesama jenis pria (WHO, 2022).</p>
+            </div>
+            <img src="https://res.cloudinary.com/dyxqjq1yp/image/upload/v1764262290/bg-2_pt6dgx.webp" alt="gambar metric IMS">
+        </div>
     </div>
+    <div class="pembatas"></div>
 </section>
 
 <style>
@@ -19,10 +39,15 @@
     }
 
     h2 {
-        font-size: 1.5rem;
-        max-width: 100%;
+        font-size: 1.85rem;
+        max-width: 88vw;
         text-align: right;
         padding-inline: 10px;
+    }
+
+    .hl {
+        color: rgb(0, 0, 0);
+        text-decoration: underline;
     }
 
     .inner-container {
@@ -34,20 +59,82 @@
     }
 
     .desc {
-        width: 100%;
+        width: 90%;
         min-height: 200px;
         backdrop-filter: blur(1.5px);
         filter: brightness(99%);
         border: 1px solid #3c3c431f;
         border-radius: 16px;
-        padding: .5em 0;
+        padding: 1em;
+        opacity: 70%;
+    }
+
+    .hl-main {
+        color: white;
+        background-color: #ED5E5E;
+        padding-inline: .25em;
     }
 
     .card-metric {
-        width: 100%;
-        min-height: 100px;
-        background-color: aqua;
+        position: relative;
+        width: 89%;
+        min-height: 70px;
+        border: 1px solid #3c3c431f;
         border-radius: 10px;
+        padding: .95em 1em .75em 1.25em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-metric:nth-child(2) {
+        background: linear-gradient(
+            190deg,
+            #ffffff 75%,
+            rgba(198, 40, 40, 0.035) 100%
+        );
+    }
+
+    .card-metric:nth-child(3) {
+        background: linear-gradient(
+            190deg,
+            #ffffff 75%,
+            rgba(142, 36, 170, 0.035) 100%
+        );
+    }
+
+    .content {
+        width: 80%;
+        text-align: left;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+        margin-top: 4px;
+        opacity: 70%;
+    }
+
+    .card-metric img {
+        position: absolute;
+        object-fit: contain;
+        top: 5px;
+        right: 0px;
+        width: 67px;
+        height: 67px;
+        border-radius: 10px;
+        opacity: 90%;
+    }
+
+    .pembatas {
+        width: 85%;
+        border-bottom: 2px solid #3c3c4313;
+        height: 45px;
     }
 </style>
 

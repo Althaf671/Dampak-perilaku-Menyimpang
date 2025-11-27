@@ -1,17 +1,26 @@
 <section class="faktor__section">
-    <h2>Kenapa seseorang dapat terjerumus ke dalam LGBT?</h2>
+    <h2>Kenapa seseorang dapat <span>terjerumus</span> ke dalam LGBT?</h2>
     <div class="container">
-        <div class="card">gambar 1</div>
+        <div class="title-container">
+            <div class="line"></div>
+            <h2>Hubungan seksual tanpa kondom</h2>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, totam deserunt?
         </p>
     </div>
     <div class="container">
-        <div class="card">gambar 2</div>
+        <div class="title-container">
+            <div class="line"></div>
+            <h2>Berganti-ganti pasangan</h2>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, totam deserunt?
         </p>
     </div>
     <div class="container">
-        <div class="card">gambar 3</div>
+        <div class="title-container">
+            <div class="line"></div>
+            <h2>Kurangnya edukasi seksual</h2>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, totam deserunt?
         </p>
     </div>
@@ -34,23 +43,50 @@
         max-width: 90%;
         text-align: right;
         padding-inline: 10px;
+        text-align: left;
+    }
+    h2 span {
+        background-color: #D59990;
+        padding-inline: .25em;
+        color: white;
     }
 
     .container {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        width: 90%;
+        min-height: 70px;
+        border: 1px solid #3c3c431f;
+        border-radius: 10px;
+        width: 81%;
         min-height: fit-content;
-        border: 1px solid black;
+        padding: 1.25em 1em .35em 1em;
+        background: linear-gradient(
+            120deg,
+            #ffffff 85%,
+            rgba(142, 36, 170, 0.02) 100%
+        );
     }
 
-    .card {
-        width: 35%;
-        height: 125px;
-        background-color: aqua;
+    .line {
+        border-left: 2.5px solid #D59990;
+    }
+
+    .title-container {
+        display: flex;
+        gap: .35em;
+    }
+
+    .title-container h2 {
+        font-size: 1.15rem;
+        text-align: left;
+        padding: 0;
+        margin: 0;
     }
 
     p {
-        max-width: 60%;
+        max-width: 90%;
+        opacity: 70%;
+        margin-top: 3px;
     }
 </style>
